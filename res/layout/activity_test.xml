@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#F5F5F5">
+    
+    <TextView
+        android:id="@+id/test_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"        
+        android:gravity="center"
+        android:text="您本次心率为60b/min"
+        android:textColor="@color/black"       
+        android:textSize="16sp"/>
+    
+    
+     <LinearLayout
+        android:id="@+id/test_graphic"         
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"  
+        android:layout_height="360dp"  
+        android:orientation="vertical"
+       >   
+    </LinearLayout>  
+    
+    <ImageView
+        android:id="@+id/img_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"                     
+        android:layout_gravity="center"
+        android:src="@drawable/test_btn"
+        android:clickable="true" />
+    
+     <TextView
+        android:id="@+id/test_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"        
+        android:gravity="center"
+        android:text="按住按钮，进行一次记录"
+        android:textColor="@color/black"       
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+

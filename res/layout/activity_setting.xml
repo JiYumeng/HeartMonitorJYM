@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ab_solid_light"
+        android:orientation="horizontal" >
+        
+         <ImageView
+           android:id="@+id/img_setting1"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="12dp"
+           android:layout_marginLeft="10dp"                             
+           android:src="@drawable/setting_back"
+           android:onClick="onClickBack"
+           />
+         
+        <TextView           
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="130dp"
+           android:text="设置"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:textColor="@color/white" />
+ 
+        </LinearLayout>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        
+        <ImageView
+           android:id="@+id/img_user"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:layout_marginLeft="10dp"                  
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:src="@drawable/default_avatar_lead" />
+        
+        <TextView
+           android:id="@+id/userId"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:paddingLeft="20dp"                   
+           android:gravity="right"          
+           android:text="账号： 18867521634"           
+           android:textSize="16sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal" >
+                       
+        <TextView
+           android:id="@+id/sync"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:paddingLeft="20dp"                                        
+           android:text="同步功能"           
+           android:textSize="16sp" 
+           android:textColor="@color/black"/>
+        
+        <TextView
+           android:id="@+id/sync_c"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:layout_marginLeft="200dp"                  
+           android:gravity="right"          
+           android:text="未开启"           
+           android:textSize="18sp"
+           android:textColor="@color/green" />
+        
+        <ImageView
+           android:id="@+id/arrow1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                            
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:src="@drawable/setting_arrow"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"           
+           android:scaleType="matrix" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+                       
+        <TextView
+           android:id="@+id/drug"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:paddingLeft="20dp"                                        
+           android:text="服药提醒"           
+           android:textSize="16sp" 
+           android:textColor="@color/black"/>
+        
+        <TextView
+           android:id="@+id/drug_c"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:layout_marginLeft="200dp"                  
+           android:gravity="right"          
+           android:text="未设置"           
+           android:textSize="18sp"
+           android:textColor="@color/green" />
+        
+        <ImageView
+           android:id="@+id/arrow2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                            
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:src="@drawable/setting_arrow"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"           
+           android:scaleType="matrix" />
+
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+                       
+        <TextView
+           android:id="@+id/language"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:paddingLeft="20dp"                                        
+           android:text="选择语言"           
+           android:textSize="16sp" 
+           android:textColor="@color/black"/>
+        
+        <TextView
+           android:id="@+id/language_c"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                       
+           android:layout_marginLeft="180dp"                  
+           android:gravity="right"          
+           android:text="系统默认"           
+           android:textSize="18sp"
+           android:textColor="@color/green" />
+        
+        <ImageView
+           android:id="@+id/arrow3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                            
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp"
+           android:src="@drawable/setting_arrow"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"           
+           android:scaleType="matrix" />
+
+    </LinearLayout>
+    
+    <Button 
+      	android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:padding="4dp" 
+        android:text="注销登录"
+        android:textSize="18sp"		
+		android:textColor="#fff"
+		android:gravity="center"
+		android:background="@drawable/btn_style_red"/>
+    
+</LinearLayout>
